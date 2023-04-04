@@ -1,12 +1,10 @@
-package com.driver.services;
+package com.driver.controllers;
 
 import com.driver.model.Airport;
 import com.driver.model.City;
 import com.driver.model.Flight;
 import com.driver.model.Passenger;
-import com.driver.repository.AirportRepository;
 import org.springframework.stereotype.Service;
-import org.springframework.web.bind.annotation.PathVariable;
 
 import java.util.Date;
 
