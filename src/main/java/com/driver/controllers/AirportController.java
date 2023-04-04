@@ -7,11 +7,16 @@ import com.driver.model.Flight;
 import com.driver.model.Passenger;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.Objects;
 
 @RestController
 public class AirportController {
-    AirportService airportservice;
+    AirportService airportservice=new AirportService();
     @PostMapping("/add_airport")
     public String addAirport(@RequestBody Airport airport){
                 airportservice.addAirport(airport);

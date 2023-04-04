@@ -4,13 +4,14 @@ import com.driver.model.Airport;
 import com.driver.model.City;
 import com.driver.model.Flight;
 import com.driver.model.Passenger;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.Date;
 
 @Service
 public class AirportService {
-    AirportRepository airportRepositorye;
+    AirportRepository airportRepositorye=new AirportRepository();
     public void addAirport(Airport airport) {
 
         airportRepositorye.addAirport(airport);
